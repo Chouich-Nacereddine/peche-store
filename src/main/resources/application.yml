@@ -1,13 +1,14 @@
 spring : 
     datasource :
-        url : jdbc:postgresql://localhost:5432/peche-store
-        username : postgres
-        password : Chouich0012
+        # url : jdbc:postgresql://localhost:5432/peche-store
+        # username : postgres
+        # password : Chouich0012
+        url : jdbc:postgresql://ep-crimson-cake-a4shfx64-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require
+        username : default
+        password : oy4IZMKs8XFS
         driver-class-name : org.postgresql.Driver
     jpa : 
         hibernate :
             ddl-auto : update
-        properties:
-            hibernate:
-                dialect: org.hibernate.dialect.PostgreSQLDialect
+        
 
